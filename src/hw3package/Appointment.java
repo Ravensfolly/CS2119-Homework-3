@@ -30,4 +30,9 @@ public class Appointment extends Event
 	{
 		return this.type;
 	}
+	
+	public String toString() 
+	{
+		return super.toString() + "\nType of meeting: " + this.type;
+	}
 }

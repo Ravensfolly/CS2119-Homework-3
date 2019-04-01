@@ -1,7 +1,7 @@
 package hw3package;
 import java.util.GregorianCalendar;
 import java.util.ArrayList;
-public class HW3StubDemo {
+public class MainMethod {
 
 	public static void main(String[] args) {
 		
@@ -27,22 +27,24 @@ public class HW3StubDemo {
 		
 		// check Appointment methods
 		name = a.getType();
+		System.out.println("Appt type: " + name);
 		name = a.toString();
+		System.out.println("---------------\n" + a);
 		
 		// check Meeting methods
 		m.addAttendee("Joe");
+		@SuppressWarnings("unused")
 		ArrayList<String> people = m.getAttendees();
 		name = m.toString();
+		System.out.println("---------------\n" + name);
 		
 		// check AppointmentBook methods
 		book.addEvent(a);
 		book.addEvent(m);
+		@SuppressWarnings("unused")
 		ArrayList<Event> todaysEvents = book.getEventsForDate(today);
 		
 		
 		System.out.println("Compiles OK");
-		
-
 	}
-
 }

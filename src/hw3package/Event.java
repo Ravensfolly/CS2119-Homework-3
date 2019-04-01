@@ -28,10 +28,13 @@ public abstract class Event
 	 * @param anEvent
 	 * @return contact information and the date of the event in a string format
 	 */
-	public String toString(Event anEvent)
+	public String toString()
 	{
-		String output = new String("Contact information: /n" + this.person.toString() + "/n Date of the meeting: " + this.date);
-		return output;
+		int month = this.date.get(GregorianCalendar.MONTH);
+		int day   = this.date.get(GregorianCalendar.DAY_OF_MONTH);
+		int year  = this.date.get(GregorianCalendar.YEAR);
+		return "Contact information: \n" + this.person.toString() + 
+				"\nDate of the meeting: " + month + "/" + day + "/" + year;
 	}
 	
 	/**

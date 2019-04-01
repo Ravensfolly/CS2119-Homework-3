@@ -39,4 +39,6 @@ public class Meeting extends Event
 		return this.names;
 	}
 	
+	
+	
 }
