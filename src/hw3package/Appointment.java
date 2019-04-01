@@ -16,7 +16,7 @@ public class Appointment extends Event
 	 * @param date
 	 * @param type
 	 */
-	Appointment(Contact person, GregorianCalendar date, String type)
+	public Appointment(Contact person, GregorianCalendar date, String type)
 	{
 		super(person, date);
 		this.type = type;

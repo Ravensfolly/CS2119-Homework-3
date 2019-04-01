@@ -14,7 +14,7 @@ public class Contact
 	 * @param name
 	 * @param tele
 	 */
-	Contact(String name, int tele)
+	public Contact(String name, int tele)
 	{
 		this.name = name;
 		this.tele = tele;

@@ -15,7 +15,7 @@ public class Meeting extends Event
 	 * @param person
 	 * @param date
 	 */
-	Meeting(Contact person, GregorianCalendar date)
+	public Meeting(Contact person, GregorianCalendar date)
 	{
 		super(person, date);
 		this.names = new ArrayList<String>();

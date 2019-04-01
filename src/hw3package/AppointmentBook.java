@@ -15,7 +15,7 @@ public class AppointmentBook
 	/**
 	 * Constructor for an appointment book.
 	 */
-	AppointmentBook()
+	public AppointmentBook()
 	{
 		this.events = new ArrayList<Event>();
 	}
@@ -23,11 +23,11 @@ public class AppointmentBook
 	/**
 	 * Adds an event to the existing list in the Appointment Book, as long as the event does not conflict with one that already exists.
 	 * Note that events only last for one hour and always start on the hour.
-	 * @param e
+	 * @param e An event to be added
 	 */
 	public void addEvent(Event e)
 	{
-		for(Event i : events)
+		for(Event i: events)
 		{
 			//checking to see if the event is on the same day as the events already existing in the list
 			if(e.getDate().get(GregorianCalendar.DAY_OF_MONTH) == i.getDate().get(GregorianCalendar.DAY_OF_MONTH)) 
@@ -39,7 +39,6 @@ public class AppointmentBook
 				}
 			}
 		}
-		
 	}
 	
 	/**
