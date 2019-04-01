@@ -1,3 +1,4 @@
+package hw3package;
 /**
  * Contact class
  * @author Caroline and Nathaniel
