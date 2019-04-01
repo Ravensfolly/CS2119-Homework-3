@@ -1,10 +1,18 @@
-
+/**
+ * Contact class
+ * @author Caroline and Nathaniel
+ */
 public class Contact
 {
 
 	private String name;
 	private int tele;
 	
+	/**
+	 * Constructor for a contact.
+	 * @param name
+	 * @param tele
+	 */
 	Contact(String name, int tele)
 	{
 		this.name = name;
@@ -12,7 +20,11 @@ public class Contact
 		
 	}
 	
-	public String toString(Contact person)
+	/**
+	 * Turns the current contact into a string format, stating their name and phone number.
+	 * @return contact's name and phone number in string format
+	 */
+	public String toString()
 	{
 		
 		String output = new String("Contact's name: " + this.name + "/n Contact's phone number: " + this.tele);
