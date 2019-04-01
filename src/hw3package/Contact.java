@@ -28,7 +28,7 @@ public class Contact
 	public String toString()
 	{
 		
-		String output = new String("Contact's name: " + this.name + "/n Contact's phone number: " + this.tele);
+		String output = new String("Contact's name: " + this.name + "\nContact's phone number: " + this.tele);
 		
 		return output;
 	}

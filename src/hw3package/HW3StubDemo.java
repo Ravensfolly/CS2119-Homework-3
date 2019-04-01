@@ -19,8 +19,11 @@ public class HW3StubDemo {
 		
 		// check Contact methods
 		String name = glynis.getName();
+		System.out.println(name);
 		int phoneNum = glynis.getPhone();
+		System.out.println(phoneNum);
 		name = glynis.toString();
+		System.out.println(name);
 		
 		// check Appointment methods
 		name = a.getType();
