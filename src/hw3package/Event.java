@@ -1,10 +1,11 @@
 package hw3package;
-import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 /**
  * Abstract class Event
  * @author Caroline and Nathaniel
+ * cpbreen@wpi.edu
+ * nsbajakian@wpi.edu
  */
 public abstract class Event 
 {
@@ -37,6 +38,14 @@ public abstract class Event
 				"\nDate of the meeting: " + month + "/" + day + "/" + year;
 	}
 	
+	public String retDate() {
+		int month = this.date.get(GregorianCalendar.MONTH);
+		int day   = this.date.get(GregorianCalendar.DAY_OF_MONTH);
+		int year  = this.date.get(GregorianCalendar.YEAR);
+		int hour  = this.date.get(GregorianCalendar.HOUR_OF_DAY);
+		return "Date of the meeting: " + month + "/" + day + "/" + year + ", @" + hour;
+	}
+	
 	/**
 	 * Retrieves the date of an event
 	 * @return event's date
@@ -44,5 +53,9 @@ public abstract class Event
 	public GregorianCalendar getDate()
 	{
 		return this.date;
+	}
+	
+	public Contact getContact() {
+		return this.person;
 	}
 }

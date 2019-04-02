@@ -4,7 +4,8 @@ import java.util.GregorianCalendar;
 /**
  * Appointment class, extends the Event class
  * @author Caroline and Nathaniel
- *
+ * cpbreen@wpi.edu
+ * nsbajakian@wpi.edu
  */
 public class Appointment extends Event
 {

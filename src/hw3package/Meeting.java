@@ -5,6 +5,8 @@ import java.util.GregorianCalendar;
 /**
  * Meeting class, extends the abstract Event class
  * @author Caroline and Nathaniel
+ * cpbreen@wpi.edu
+ * nsbajakian@wpi.edu
  */
 public class Meeting extends Event
 {
