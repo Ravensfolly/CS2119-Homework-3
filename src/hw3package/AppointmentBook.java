@@ -25,7 +25,7 @@ public class AppointmentBook
 	/**
 	 * Adds an event to the existing list in the Appointment Book, as long as the event does not conflict with one that already exists.
 	 * Note that events only last for one hour and always start on the hour.
-	 * @param e
+	 * @param e An event to be added
 	 */
 	public void addEvent(Event e)
 	{

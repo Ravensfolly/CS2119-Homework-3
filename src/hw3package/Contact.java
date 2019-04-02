@@ -10,8 +10,8 @@ public class Contact {
 	
 	/**
 	 * Constructor for a contact.
-	 * @param name
-	 * @param tele
+	 * @param name Name of a person
+	 * @param tele Telephone number for that person
 	 */
 	public Contact(String name, int tele) {
 		this.name = name;
@@ -43,5 +43,4 @@ public class Contact {
 	public int getPhone() {
 		return this.tele;
 	}
-	
 }

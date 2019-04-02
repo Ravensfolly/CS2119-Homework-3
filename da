@@ -1,0 +1,47 @@
+[1mdiff --git a/src/hw3package/AppointmentBook.java b/src/hw3package/AppointmentBook.java[m
+[1mindex a9c243f..3e173ce 100644[m
+[1m--- a/src/hw3package/AppointmentBook.java[m
+[1m+++ b/src/hw3package/AppointmentBook.java[m
+[36m@@ -25,7 +25,7 @@[m [mpublic class AppointmentBook[m
+ 	/**[m
+ 	 * Adds an event to the existing list in the Appointment Book, as long as the event does not conflict with one that already exists.[m
+ 	 * Note that events only last for one hour and always start on the hour.[m
+[31m-	 * @param e[m
+[32m+[m	[32m * @param e An event to be added[m
+ 	 */[m
+ 	public void addEvent(Event e)[m
+ 	{[m
+[1mdiff --git a/src/hw3package/Contact.java b/src/hw3package/Contact.java[m
+[1mindex f62a103..8131ab5 100644[m
+[1m--- a/src/hw3package/Contact.java[m
+[1m+++ b/src/hw3package/Contact.java[m
+[36m@@ -10,8 +10,8 @@[m [mpublic class Contact {[m
+ 	[m
+ 	/**[m
+ 	 * Constructor for a contact.[m
+[31m-	 * @param name[m
+[31m-	 * @param tele[m
+[32m+[m	[32m * @param name Name of a person[m
+[32m+[m	[32m * @param tele Telephone number for that person[m
+ 	 */[m
+ 	public Contact(String name, int tele) {[m
+ 		this.name = name;[m
+[36m@@ -43,5 +43,4 @@[m [mpublic class Contact {[m
+ 	public int getPhone() {[m
+ 		return this.tele;[m
+ 	}[m
+[31m-	[m
+ }[m
+[1mdiff --git a/src/hw3package/Event.java b/src/hw3package/Event.java[m
+[1mindex 0870e35..5f2c7b6 100644[m
+[1m--- a/src/hw3package/Event.java[m
+[1m+++ b/src/hw3package/Event.java[m
+[36m@@ -17,7 +17,7 @@[m [mpublic abstract class Event[m
+ 	 * @param person[m
+ 	 * @param date[m
+ 	 */[m
+[31m-	Event(Contact person, GregorianCalendar date)[m
+[32m+[m	[32mpublic Event(Contact person, GregorianCalendar date)[m
+ 	{[m
+ 		this.person = person;[m
+ 		this.date = date;[m

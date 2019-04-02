@@ -17,7 +17,7 @@ public abstract class Event
 	 * @param person
 	 * @param date
 	 */
-	Event(Contact person, GregorianCalendar date)
+	public Event(Contact person, GregorianCalendar date)
 	{
 		this.person = person;
 		this.date = date;
